@@ -57,7 +57,6 @@ async function getAllTodo() {
     }
     document.getElementById("tableBody").innerHTML = container
 }
-
 // add todo
 async function addTodo() {
     var todoName = todoInput.value
@@ -77,11 +76,9 @@ async function addTodo() {
     getAllTodo()
     clear()
 }
-
 function clear() {
     todoInput.value = "";
 }
-
 // MarktodoAsComplected
 async function martkTodoAsCompleted(id) {
     var res = await fetch("https://todos.routemisr.com/api/v1/todos", {
@@ -101,7 +98,6 @@ async function martkTodoAsCompleted(id) {
 
 
 }
-
 // DeleteTodo
 async function deleteTodo(id) {
     console.log(id)
@@ -121,6 +117,8 @@ async function deleteTodo(id) {
 
 
 }
+
+
 
 
 

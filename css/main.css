@@ -41,3 +41,26 @@ body{
    background-color: rgb(255, 255, 255);
     border: 1px black solid;
 }
+
+
+@media screen and (min-width: 800px) {
+  
+
+    #searchDiv input {
+        width: 75%;
+        
+    }
+}
+
+
+  .animate__animated.animate__slideInUp {
+    --animate-duration: 1s;
+  }
+  .animate__animated.animate__slideInDown {
+    --animate-duration: 1s;
+  }
+  .animate__animated.animate__slideInLeft {
+    --animate-duration: 1s;
+  }
+
+

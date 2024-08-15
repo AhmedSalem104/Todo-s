@@ -7,44 +7,47 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/png" href="img/Bookmark.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Todo`s </title>
 </head>
 
 <body>
-    <header class="py-3 my-3">
+
+
+    
+    <header class="py-3 my-3 animate__animated animate__slideInLeft">
         <div id="headerTitle" class="text-center   p-3 m-1">
             <h2>Todo`s Link with <span id="title">Api</span></h2>
         </div>
         <hr>
     </header>
 
-    <section class="text-center  my-4">
+    <section class="text-center  my-4 animate__animated animate__slideInDown">
         <div class="form d-flex justify-content-center ">
             <input id="todo" type="text" placeholder="New Todo" class="form-control w-50">
             <button onclick="addTodo()" class="addTodo btn btn-primary">Add Todo</button>
         </div>
     </section>
-  <div>
-      <div id="searchDiv" class="p-3 text-center d-flex justify-content-center"> 
-        <input onkeyup="getAllTodo()" id="searchtodo" type="text"
-            placeholder="search" class="form-control w-50">
+    <div class="animate__animated animate__slideInUp">
+        <div id="searchDiv" class="p-3 text-center d-flex justify-content-center">
+            <input onkeyup="getAllTodo()" id="searchtodo" type="text" placeholder="search" class="form-control w-50">
+        </div>
+        <div class="px-1 m-1 d-flex justify-content-center">
+            <table id="table" class="table table-dark table-striped  text-center w-75">
+                <tr class="bg-info fw-bolder">
+                    <td class="col-2">Index </td>
+                    <td class="">Todo </td>
+                    <td class="col-2">Completed ..?</td>
+                    <td class="col-2">Delete</td>
+                </tr>
+                <tbody id="tableBody" class="text-center ">
+                </tbody>
+            </table>
+
+
+
+        </div>
     </div>
-    <div class="px-1 m-1 d-flex justify-content-center">
-        <table id="table" class="table table-dark table-striped  text-center w-75">
-            <tr class="bg-info fw-bolder">
-                <td class="col-2">Index </td>
-                <td class="">Todo </td>
-                <td class="col-2">Completed ..?</td>
-                <td class="col-2">Delete</td>
-            </tr>
-            <tbody id="tableBody" class="text-center ">
-            </tbody>
-        </table>
-
-
-
-    </div>
-  </div>
     <script src="js/main.js"></script>
 </body>
 
